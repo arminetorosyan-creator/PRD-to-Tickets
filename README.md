@@ -20,6 +20,7 @@ owner to review and amend — nothing is ever written to Jira directly.
 | Project | Source | Deliverable |
 |---|---|---|
 | Sanctions Module | [`sources/sanctions-module/Sanctions_Module_PRD_v3.0.docx`](sources/sanctions-module/Sanctions_Module_PRD_v3.0.docx) | [`deliverables/sanctions-module/Sanctions_Module_Epics_Tickets_Draft.docx`](deliverables/sanctions-module/Sanctions_Module_Epics_Tickets_Draft.docx) |
+| AFML Reporting | [`sources/afml-reporting/AFML_REPORTING_PRD.docx`](sources/afml-reporting/AFML_REPORTING_PRD.docx) (primary), [`sources/afml-reporting/AFML_PASSPORT.pdf`](sources/afml-reporting/AFML_PASSPORT.pdf) (general product passport, Part VII) | [`deliverables/afml-reporting/AFML_Reporting_Epics_Tickets_Draft.docx`](deliverables/afml-reporting/AFML_Reporting_Epics_Tickets_Draft.docx) |
 
 ## How it works
 
