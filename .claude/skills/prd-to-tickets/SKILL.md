@@ -89,6 +89,13 @@ Use the `docx` skill to generate the file. Structure:
     - User story statement (`As a ___, I want ___, so that ___`) or task
       description for non-user-facing stories.
     - Bulleted Acceptance Criteria (Given/When/Then).
+    - A **Definition of Done** checklist — the same standard bar repeated
+      on every story (unlike AC, which is story-specific): acceptance
+      criteria verified, code reviewed, tests written and passing, no
+      regressions, documentation updated, deployed to staging/UAT and
+      verified, Product Owner sign-off obtained. Repeat it per-ticket
+      (not as one shared list) so each ticket is self-contained on import
+      into Jira.
     - A blank "Notes" line if there's a dependency or open question specific
       to that story.
 
@@ -109,6 +116,7 @@ review/amend it before doing so.
 ## Quality checklist before delivering
 
 - [ ] Every story has acceptance criteria — none skipped.
+- [ ] Every story has a Definition of Done checklist — none skipped.
 - [ ] No story silently invents functionality not implied by the PRD.
 - [ ] Titles are concise (aim under ~8 words) and describe outcomes, not
       implementation steps.
