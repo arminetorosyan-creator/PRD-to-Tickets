@@ -14,6 +14,10 @@ owner to review and amend — nothing is ever written to Jira directly.
   the skill, one subfolder per project, kept for traceability.
 - **`deliverables/`** — the generated Epics/Tickets `.docx` drafts, one
   subfolder per project, mirroring `sources/`.
+- **`docs/DoD-Verification-Process.md`** — who verifies each Definition of
+  Done item, how, and at what workflow stage. Every ticket's DoD checklist
+  embeds this inline (Verified by / When on each line); this page is the
+  canonical source for that mapping.
 
 ## Current projects
 

@@ -89,13 +89,37 @@ Use the `docx` skill to generate the file. Structure:
     - User story statement (`As a ___, I want ___, so that ___`) or task
       description for non-user-facing stories.
     - Bulleted Acceptance Criteria (Given/When/Then).
-    - A **Definition of Done** checklist — the same standard bar repeated
-      on every story (unlike AC, which is story-specific): acceptance
-      criteria verified, code reviewed, tests written and passing, no
-      regressions, documentation updated, deployed to staging/UAT and
-      verified, Product Owner sign-off obtained. Repeat it per-ticket
-      (not as one shared list) so each ticket is self-contained on import
-      into Jira.
+    - A **Definition of Done** checklist — the same standard 7-item bar
+      repeated on every story (unlike AC, which is story-specific). Each
+      line names who verifies it and when, not just what — see
+      `docs/DoD-Verification-Process.md` in this repo for the canonical
+      text and the full who/how/when table:
+      1. Acceptance criteria above are met and verified — Verified by:
+         QA/Tester; When: before moving to review.
+      2. Code reviewed and approved — Verified by: peer engineer (a
+         second, more senior reviewer for compliance-critical/Four-Eyes
+         stories); When: before merge.
+      3. Automated tests (unit/integration) written and passing —
+         Verified by: implementing developer; When: CI gate, before merge.
+      4. No regression introduced in existing functionality — Verified
+         by: QA + CI regression suite; When: after merge, before
+         staging/UAT deploy.
+      5. Relevant documentation updated — Verified by: developer
+         (technical docs) + BA/PO (user-facing docs); When: before ticket
+         marked Done.
+      6. Deployed to staging/UAT and verified — Verified by: DevOps/
+         release engineer deploys, QA or PO verifies; When: after
+         regression passes, before sign-off.
+      7. Product Owner sign-off obtained — Verified by: Product Owner
+         (+ Compliance/MLRO for regulated tickets); When: final step
+         before release eligibility.
+
+      Repeat the full checklist per-ticket (not as one shared list) so
+      each ticket is self-contained on import into Jira. If
+      `docs/DoD-Verification-Process.md` doesn't exist yet in this repo,
+      create it (see an existing project's deliverable for the format)
+      so the who/when mapping has one canonical source instead of being
+      redefined per project.
     - A blank "Notes" line if there's a dependency or open question specific
       to that story.
 
